@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <div>
+                <h1>Todo List</h1>
+                <div>
+                    <input id="user-input" type="text" placeholder="Your to-do here">
+                </div>
+                <div>
+                    <button id="add-button" onclick="addTodoList()">Add Todo</button>
+                    <button id="clear-all-button" onclick="clearAllTodoList()">Clear All</button>
+                </div>
+                <div>
+                    <div> Check to show done or undone tasks only <input type="checkbox" id="check-done" onclick="checkShowTask()">
+                        <div>
+                            <button onclick="showAllTask()">Show All</button>
+                        </div>
+                    </div>
+                    <div>
+                        ✔: Done task &nbsp;
+                        ❌: Undone task
+                        <a id="remove-button-legend" href="#">X</a>: Remove task
+                    </div>
+                </div>
+                <div>
+                    <ol id="current-list-item"></ol>
+                </div>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+</body>
+
+</html>
